@@ -1,0 +1,24 @@
+{
+  "name": "electronic-dingding",
+  "version": "1.0.0",
+  "description": "Electron App for dingding.",
+  "main": "./src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "./scripts/build-all.sh",
+    "build:osx": "./scripts/build.sh darwin x64",
+    "build:osx64": "./scripts/build.sh darwin x64",
+    "build:linux32": "./scripts/build.sh linux ia32",
+    "build:linux": "./scripts/build.sh linux x64",
+    "build:linux64": "./scripts/build.sh linux x64",
+    "build:win": ".\\scripts\\build-win32.bat win32 ia32",
+    "build:win32": ".\\scripts\\build-win32.bat win32 ia32",
+    "build:win64": ".\\scripts\\build-win32.bat win32 x64"
+  },
+  "author": "cmzz",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^1.13.3",
+    "electron-packager": "^8.2.0"
+  }
+}
